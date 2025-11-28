@@ -17,7 +17,25 @@ body {
     /* Bigger base font */
     line-height: 1.6;
 }
+header {
+    position: fixed;  /* Hamesha screen ke top par rahega */
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 301px;
+    background: linear-gradient(135deg, #182c9e, #8bb5dc, #6a73a7);
 
+    /* background-color: #90aecb; */
+    color: white;
+    padding: 20px;
+    z-index: 1000;   /* header content ko sabke upar rakhne ke liye */
+}
+main {
+    margin-top: 15%; /* header ke neeche content ke liye space */
+}
+.head{
+    margin-left: 40%;
+}
 /* Header */
 .header {
     width: 100%;
@@ -83,7 +101,7 @@ textarea {
     border: none;
     outline: none;
     background: rgba(255, 255, 255, 0.25);
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 22px;
     /* Bigger input text */
     padding: 20px 25px;
@@ -202,49 +220,5 @@ textarea {
 
 .full {
     grid-column: 1 / -1;
-}
-
-
-
-/* Thank you box */
-.thank {
-    width: 50%;
-    height: 50%;
-    display: block;
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(0, 255, 128, 0.25);
-    border: 2px solid rgba(0, 255, 128, 0.5);
-    margin-top: 15px;
-    color: rgb(16, 11, 11);
-    font-size: 50px;
-      
-}
-/* Mobile */
-@media (max-width: 480px) {
-    .thank {
-        width: 80%;
-        padding: 15px;
-        font-size: 16px;
-    }
-}
-/* Tablet */
-@media (min-width: 481px) and (max-width: 1023px) {
-    .thank {
-        width: 70%;
-        padding: 20px;
-        font-size: 18px;
-    }
-}
-
-.thankbody {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-    background: linear-gradient(135deg, #dadce8, #90aecb, #bdc6f7);
-
 }
 

@@ -1,0 +1,70 @@
+.thankbody {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;       
+    justify-content: space-between; 
+    align-items: center;           
+    background: linear-gradient(135deg, #dadce8, #90aecb, #bdc6f7);
+}
+
+/* Header image */
+.image.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Footer image */
+.image.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;     /* IMPORTANT */
+    align-items: center;         /* FOOTER ko center karne ka key */
+    padding-bottom: 20px;
+}
+
+/* Thank You box */
+.thank {
+    width: 80%;
+    height: 30%;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 255, 128, 0.25);
+    border: 2px solid rgba(0, 255, 128, 0.5);
+    color: rgb(16, 11, 11);
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .thank {
+        width: 80%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .image.header img,
+    .image.footer img {
+        width: 100px;      /* mobile ke liye image chhoti kar do */
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .thank {
+        width: 70%;
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .image.header img,
+    .image.footer img {
+        width: 150px;      /* tablet ke liye size adjust */
+        height: auto;
+    }
+}

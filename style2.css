@@ -1,0 +1,132 @@
+/* Tablet styles */
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px 15px;
+    }
+
+    header {
+        height: auto;           /* dynamic height based on content */
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header .head img {
+        max-height: 80px; /* ensure visible */
+        width: auto;
+        display: block;
+    }
+
+    .container {
+        padding: 40px 30px;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        font-size: 20px;
+        padding: 18px 20px;
+    }
+
+    .star {
+        font-size: 32px;
+    }
+
+    .chip {
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    .btn {
+        width: 200px;
+        font-size: 24px;
+        padding: 18px 20px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+    main {
+        margin-top: 45%;
+    }
+
+    header {
+        height: auto; /* dynamic height */
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50%;
+        /* gap: 10px;
+        flex-wrap: wrap; */
+    }
+
+    header .head img {
+        height: 60px; /* mobile me chhota */
+        width: auto;
+        display: block;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 18px;
+    }
+
+    .star {
+        font-size: 28px;
+    }
+
+    .chip {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 22px;
+        padding: 16px 18px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

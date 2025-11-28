@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Surprise Event - Feedback Form</title>
   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
+  <header >
+    <div class="head">
+  <img src="logo.png" alt="Companylogo">
+  <img src="Aascharya.png" alt="Companyname"></div>
+</header>
+  <main>
   <div class="container">
     <h1> Aascharya Surprise Event Feedback Form</h1>
-    <p class="lead">Aapka feedback hamare liye bahut important hai. Kripya kuch minute nikal kar apne sachhe anubhav
-      share karein.</p>
+    <p class="lead">Your feedback is extremely valuable to us. Please take a few moments to share your honest experience.</p>
 
     <form id="feedbackForm">
       <div class="grid">
@@ -43,6 +49,7 @@
         <div class="field full">
           <label>4.How much did the surprise meet expectations</label>
           <select id="expectation" required>
+            <option value="" selected disabled>-- Select an option --</option>
             <option value="5">Excellent </option>
             <option value="4">Good</option>
             <option value="3">Average </option>
@@ -80,6 +87,7 @@
         <div class="field full">
           <label>8. Team behavior / Service quality rating (1-5)</label>
           <select id="serviceRating" required>
+            <option value="" selected disabled>-- Select an option --</option>
             <option value="5">5 - Excellent</option>
             <option value="4">4 - Good</option>
             <option value="3">3 - Average</option>
@@ -128,7 +136,7 @@
 
   </div>
  
-
+</main>
   <script src="script.js"></script>
 </body>
 
