@@ -7,6 +7,8 @@
   <title>Surprise Event - Feedback Form</title>
   <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="style2.css">
+
+  
 </head>
 
 <body>
@@ -137,6 +139,32 @@
   </div>
  
 </main>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-storage.js";
+
+  // ----- Your Firebase Config -----
+  const firebaseConfig = {
+    apiKey: "AIzaSyCsneQ3Z6i5fXoZerfiYXxHtjjrGgdMLo",
+    authDomain: "feedback-form-22adf.firebaseappspot.com",
+    projectId: "feedback-form-22adf",
+    storageBucket: "feedback-form-22adf.firebasestorage.app",
+    messagingSenderId: "1080494268838",
+    appId: "1:1080494268838:web:d98238cac4288b1f4fa367",
+    measurementId: "G-M8QRGBMBJ3"
+  };
+
+  // ----- Initialize Firebase -----
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
+
+  console.log("Firebase connected!");
+</script>
+
   <script src="script.js"></script>
 </body>
 
